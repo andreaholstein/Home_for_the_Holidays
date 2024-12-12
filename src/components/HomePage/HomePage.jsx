@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import './HomePage.scss'
 
 function HomePage() {
@@ -125,7 +126,9 @@ function HomePage() {
           </clipPath>
         </defs>
       </svg>
-      <button className="homepage__button">Start Here</button>
+      <Link to="/ChooseCategory">
+        <button className="homepage__button">Start Here</button>
+      </Link>
     </section>
   );
 }

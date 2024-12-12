@@ -1,20 +1,23 @@
 // ---------- FXNALITY ----------
+import { Link } from "react-router-dom";
 // --------- COMPONENTS ---------
-// import Header from "../../components/Header"; // will need to make a Header with the art styling
 import Recommendation from "../../components/Recommendation/Recommendation";
 import RedoButton from "../../components/RedoButton/RedoButton";
 // ----------- STYLES -----------
 import "./RecoPage.scss";
 
-function HomePage() {
+// path="/MovieToWatch"
+function RecoPage({ movie }) {
+  // need props from CategoryPage Buttons!, pass again to Recommendation to use to render out different API obj elements!
 
   return (
     <>
-      {/* <Header /> */}
-      <Recommendation />
-      <RedoButton />
+      <Recommendation movie={movie} />
+      <Link to="/ChooseCategory">
+        <RedoButton />
+      </Link>
     </>
   )
 }
 
-export default HomePage
+export default RecoPage
