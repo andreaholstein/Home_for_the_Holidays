@@ -1,0 +1,43 @@
+@use "./mixins" as *;
+
+
+h1 {
+  font-family: "Cormorant";
+  font-weight: 600;
+  font-size: 2rem;
+  font-style: bold;
+
+  @include tablet {
+    font-size: 4rem;
+  }
+}
+
+h2 {
+  font-family: "Cormorant";
+  font-weight: 600;
+  font-size: 1.5rem;
+
+  @include tablet {
+    font-size: 3rem;
+  }
+}
+
+h3 {
+  font-family: "Arsenal", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+
+  @include tablet {
+    font-size: 3rem;
+  }
+}
+
+p {
+  font-family: "Arsenal", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+
+  @include tablet {
+    font-size: 2rem;
+  }
+}

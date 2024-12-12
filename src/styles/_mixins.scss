@@ -1,0 +1,30 @@
+@use "./variables" as *;
+
+@mixin button {
+  background-color: $button-color;
+  font-family: 'Arsenal';
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 2px 5px 5px hsl(0deg 0% 0% / 0.31);
+  width: 100%;
+  border: none;
+  padding: 0.5rem 2rem;
+
+  &:hover {
+    background-color: $hover-state;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: $tablet-breakpoint) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop-breakpoint) {
+    @content;
+  }
+}
