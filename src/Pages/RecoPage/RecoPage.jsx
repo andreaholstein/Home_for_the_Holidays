@@ -1,5 +1,4 @@
 // ---------- FXNALITY ----------
-// import axios from "axios";
 // --------- COMPONENTS ---------
 // import Header from "../../components/Header"; // will need to make a Header with the art styling
 import Recommendation from "../../components/Recommendation/Recommendation";
