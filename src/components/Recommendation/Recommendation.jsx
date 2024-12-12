@@ -22,6 +22,7 @@ function Recommendation() {
         const getMovies = async () => {
             try {
                 const response = await axios.get(url);
+                console.log(response.data);
                 console.log(response.data.results);
                 // console.log(response.data.results[#].original_title); // where # = a number between 0-19: Format for getting title from a specific index in the array of results! can do some matching to array indices by genre ID maybe?
                 // console.log(response.data.results[#].genre_ids); // where # = a number between 0-19: Format for getting genre IDs from a specific index in the array of results! can do some matching to array indices by genre ID maybe?
@@ -44,9 +45,9 @@ function Recommendation() {
                 return (
                     <article className="movie">
                         <h2 className="movie__title">{movie.original_title}</h2>
-                        <img className="movie__poster">{movie.poster_path}</img>
+                        <img className="movie__poster" src={movie.poster_path} alt={`${movie.original_title} Theatrical Poster`}></img>
                         <p className="movie__synopsis">{movie.overview}</p>
-                    </article>
+                    </article >
                 )
             })}
         </>
