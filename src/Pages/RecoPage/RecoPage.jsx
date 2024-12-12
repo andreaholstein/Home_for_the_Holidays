@@ -1,6 +1,5 @@
 // ---------- FXNALITY ----------
 // --------- COMPONENTS ---------
-// import Header from "../../components/Header"; // will need to make a Header with the art styling
 import Recommendation from "../../components/Recommendation/Recommendation";
 import RedoButton from "../../components/RedoButton/RedoButton";
 // ----------- STYLES -----------
@@ -10,7 +9,6 @@ function HomePage() {
 
   return (
     <>
-      {/* <Header /> */}
       <Recommendation />
       <RedoButton />
     </>
