@@ -1,4 +1,5 @@
 // ---------- FXNALITY ----------
+import { Link } from "react-router-dom";
 // --------- COMPONENTS ---------
 import Recommendation from "../../components/Recommendation/Recommendation";
 import RedoButton from "../../components/RedoButton/RedoButton";
@@ -12,7 +13,9 @@ function RecoPage({ movie }) {
   return (
     <>
       <Recommendation movie={movie} />
-      <RedoButton />
+      <Link to="/ChooseCategory">
+        <RedoButton />
+      </Link>
     </>
   )
 }
