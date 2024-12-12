@@ -4,7 +4,7 @@ import './HomePage.scss'
 function HomePage() {
   return (
     <section className="homepage">
-      <h1 className="homepage__title">Christmas Movie Generator</h1>
+      <h1 className="homepage__title">Home For The Holidays</h1>
       <svg
         width="390"
         height="456"

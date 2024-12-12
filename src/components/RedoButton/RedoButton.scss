@@ -2,6 +2,8 @@
 @use "../../styles/typography" as *;
 @use "../../styles/variables" as *;
 
-.redo-button {
+.redo_button {
     @include button;
+    width: 20vw;
+    margin-bottom: 3rem;
 }

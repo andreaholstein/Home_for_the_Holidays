@@ -22,5 +22,7 @@
     &__button {
         @include button;
         font-family: 'Arsenal';
+        margin-top: 2rem;
+        width: 20vw;
     }
 }

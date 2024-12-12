@@ -11,13 +11,13 @@ function RecoPage({ movie }) {
   // need props from CategoryPage Buttons!, pass again to Recommendation to use to render out different API obj elements!
 
   return (
-    <>
+    <section className="reco__page">
       <Recommendation movie={movie} />
       <Link to="/ChooseCategory">
         <RedoButton />
       </Link>
-    </>
-  )
+    </section>
+  );
 }
 
-export default RecoPage
+export default RecoPage;
