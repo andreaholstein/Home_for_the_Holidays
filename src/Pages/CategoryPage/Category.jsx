@@ -11,7 +11,9 @@ function CategoryPage() {
 
     return (
         <>
-
+            {/* <Link to="" >
+        // button components
+        </Link> */}
         </>
     )
 }
