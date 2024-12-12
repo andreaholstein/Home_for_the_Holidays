@@ -13,6 +13,8 @@ import CategoryPage from './Pages/CategoryPage/CategoryPage.jsx';
 import './App.scss'
 
 
+
+
 function App() {
 
   // // API CALL STATES
