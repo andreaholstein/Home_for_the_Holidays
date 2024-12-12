@@ -7,11 +7,9 @@ function RedoButton() {
 
     return (
         <>
-            {/* <Link to="/<Path to Category Choice Page>"> */}
             <button className="redo_button button" type>
                 Go Back
             </button>
-            {/* </>  */}
         </>
     )
 }
