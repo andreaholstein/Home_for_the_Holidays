@@ -1,13 +1,13 @@
 @use "./variables" as *;
-@use "./typography" as *;
 
 @mixin button {
   background-color: $button-color;
-  font-family: "Arsenal";
   font-weight: 400;
   font-size: 2rem;
+  color: white;
   border-radius: 10px;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 5px 9px -1px black;
+  width: 100%;
 
   &:hover {
     background-color: $hover-state;
