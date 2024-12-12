@@ -14,7 +14,7 @@ function CategoryPage({ handleSubmit }) {
     return (
         <section className="category__page">
             <div className="category__div">
-                <img src="../../assets/images/category-image.jpeg" alt="tv screen" className="category__image" />
+                <img src="src/assets/images/category-image.jpeg" alt="tv screen" className="category__image" />
             </div>
             <Link to="/MovieToWatch" >
                 <RandomButton handleSubmit={handleSubmit} />
