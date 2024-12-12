@@ -5,14 +5,16 @@ import RedoButton from "../../components/RedoButton/RedoButton";
 // ----------- STYLES -----------
 import "./RecoPage.scss";
 
-function HomePage() {
+// path="/MovieToWatch"
+function RecoPage({ movie }) {
+  // need props from CategoryPage Buttons!, pass again to Recommendation to use to render out different API obj elements!
 
   return (
     <>
-      <Recommendation />
+      <Recommendation movie={movie} />
       <RedoButton />
     </>
   )
 }
 
-export default HomePage
+export default RecoPage

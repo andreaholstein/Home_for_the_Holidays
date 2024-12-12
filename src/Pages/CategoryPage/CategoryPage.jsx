@@ -1,6 +1,6 @@
 // ---------- FXNALITY ----------
-import axios from "axios";
-import { useState, useEffect } from "react";
+// import axios from "axios";
+// import { useState, useEffect } from "react";
 // --------- COMPONENTS ---------
 // top part of mockup title and image - or render in-page?
 // buttons with API Logic!
@@ -11,7 +11,7 @@ function CategoryPage() {
 
     return (
         <>
-            {/* <Link to="" >
+            {/* <Link to="/MovieToWatch" >
         // button components
         </Link> */}
         </>

@@ -4,7 +4,8 @@ import { useState, useEffect } from "react";
 // ----------- STYLES -----------
 import "./Recommendation.scss";
 
-function Recommendation() { // need props from CategoryPage to render out different API obj elements
+function Recommendation({ movie }) {
+    // need props from CategoryPage Buttons! to render out different API obj elements
 
     // // API CALL STATES
     // const [movies, setMovies] = useState([]);
@@ -42,13 +43,20 @@ function Recommendation() { // need props from CategoryPage to render out differ
     return (
         <>
             {/* {movieList.map((movie) => { */}
-            return (
+
             <article className="movie">
-                {/* <h2 className="movie__title">{PROP FOR movie.original_title}</h2> 
-                <img className="movie__poster" src={PROP FOR movie.poster_path} alt={`${movie.original_title} Theatrical Poster`}></img>
-                <p className="movie__synopsis">{PROP FOR movie.overview}</p> */}
+                {/* <p>
+                    FILLER TEXT REPLACE WITH PROPS FROM BUTTON COMPONENTS TO RENDER COMMENTED OUT TEXT
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, nemo? Sed excepturi facere aut, sequi ducimus earum exercitationem sapiente necessitatibus voluptate animi repellendus quod est neque officiis optio dolor nesciunt?
+                    Ea, ipsam animi repellendus ducimus reiciendis et! Reprehenderit aliquid non dolorum reiciendis. Ipsam voluptatem illum nulla unde nobis ipsum beatae consequatur laboriosam maiores ipsa sapiente iste obcaecati non, dolore corporis.
+                    Esse expedita voluptate et, unde odit molestias aliquam doloribus quaerat officia ex hic, aspernatur iusto quisquam delectus distinctio nobis id neque doloremque laborum rem quos officiis recusandae. Facere, ex consequatur?
+                </p> */}
+
+                <h2 className="movie__title">{movie.original_title}</h2>
+                <img className="movie__poster" src={movie.poster_path} alt={`${movie.original_title} Theatrical Poster`}></img>
+                <p className="movie__synopsis">{movie.overview}</p>
             </article >
-            )
+
             {/* })} */}
         </>
     )
