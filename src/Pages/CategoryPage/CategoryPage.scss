@@ -3,15 +3,27 @@
 @use "../../styles/variables" as *;
 
 .category__page {
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  height: 80vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @include tablet {
+    height: 100vh;
+  }
+  @include desktop {
+  }
 }
 
 .category__image {
-   width: 50vw;
-   margin-bottom: 4rem;
-   margin-top: 4rem;
-   border-radius: 20px;
+  margin-bottom: 2rem;
+  width: 80vw;
+  border-radius: 1.25rem;
+  @include tablet {
+    margin-bottom: 3rem;
+    width: 60vw;
+  }
+  @include desktop {
+  }
 }

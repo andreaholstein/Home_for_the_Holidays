@@ -1,16 +1,22 @@
 @use "./variables" as *;
 
 @mixin button {
-  background-color: $button-color;
-  font-family: 'Arsenal';
+  width: 100%;
+  padding: 0.5rem;
+  font-family: "Arsenal";
   font-weight: 400;
   font-size: 1.5rem;
   color: white;
-  border-radius: 10px;
-  box-shadow: 2px 5px 5px hsl(0deg 0% 0% / 0.31);
-  width: 100%;
+  background-color: $button-color;
   border: none;
-  padding: 0.5rem 2rem;
+  border-radius: 0.625rem;
+  box-shadow: 0.125rem 0.3125rem 0.3125rem hsl(0deg 0% 0% / 0.31);
+  cursor: pointer;
+  @include tablet {
+    padding: 0.5rem 2rem;
+  }
+  @include desktop {
+  }
 
   &:hover {
     background-color: $hover-state;

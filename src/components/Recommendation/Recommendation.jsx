@@ -68,9 +68,13 @@ function Recommendation() {
     return (
         <>
             <article className="movie">
-                <h2 className="movie__title">{randomMovie.original_title}</h2>
-                <img className="movie__poster" src={`https://image.tmdb.org/t/p/original/${randomMovie.poster_path}`} alt={`${randomMovie.original_title} Theatrical Poster`}></img>
-                <p className="movie__synopsis">{randomMovie.overview}</p>
+                <div className="movie__card">
+                    <h2 className="movie__title">{randomMovie.original_title}</h2>
+                    <div className="movie__poster-wrap">
+                        <img className="movie__poster" src={`https://image.tmdb.org/t/p/original/${randomMovie.poster_path}`} alt={`${randomMovie.original_title} Theatrical Poster`}></img>
+                    </div>
+                    <p className="movie__synopsis">{randomMovie.overview}</p>
+                </div>
             </article >
         </>
     )
