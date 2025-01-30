@@ -1,5 +1,3 @@
-// ---------- FXNALITY ----------
-// import { Link } from "react-router-dom";
 // ----------- STYLES -----------
 import "./RedoButton.scss"
 

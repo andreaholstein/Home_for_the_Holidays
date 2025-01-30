@@ -12,8 +12,6 @@
   @include tablet {
     height: 100vh;
   }
-  @include desktop {
-  }
 }
 
 .category__image {
@@ -23,7 +21,5 @@
   @include tablet {
     margin-bottom: 3rem;
     width: 60vw;
-  }
-  @include desktop {
   }
 }

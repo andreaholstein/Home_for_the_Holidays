@@ -15,8 +15,6 @@
   @include tablet {
     padding: 0.5rem 2rem;
   }
-  @include desktop {
-  }
 
   &:hover {
     background-color: $hover-state;

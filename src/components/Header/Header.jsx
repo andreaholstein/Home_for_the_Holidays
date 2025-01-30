@@ -1,6 +1,7 @@
 import "./Header.scss";
 
 function Header() {
+
   return (
     <header className="header">
       <audio className="header__audio" src="src/assets/music/Scott Holmes Music - Jingle Bells.mp3" type="audio/mpeg" controls loop autoPlay></audio>
