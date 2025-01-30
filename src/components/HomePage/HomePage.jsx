@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import './HomePage.scss'
 
 function HomePage() {
+
   return (
     <section className="homepage">
       <h1 className="homepage__title">Home For The Holidays</h1>

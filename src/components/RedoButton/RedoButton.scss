@@ -3,7 +3,7 @@
 @use "../../styles/variables" as *;
 
 .redo_button {
-    @include button;
-    width: 20vw;
-    margin-bottom: 3rem;
+  @include button;
+  width: 30vw;
+  margin-bottom: 3rem;
 }
