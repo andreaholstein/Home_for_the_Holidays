@@ -1,9 +1,5 @@
-// ---------- FXNALITY ----------
-// --------- COMPONENTS ---------
 // ----------- STYLES -----------
 import "./RandomButton.scss";
-
-// WORKS!
 
 function RandomButton({ handleSubmit }) {
 

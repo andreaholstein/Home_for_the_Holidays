@@ -3,16 +3,57 @@
 @use "../../styles/variables" as *;
 
 .movie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__card {
+    margin: 2rem 0;
+    padding: 1rem 2rem;
+    width: 80%;
+    background-color: beige;
+    border: 0.0625rem solid inherit;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-
-    &__poster {
-        width: 50vw;
-        height: 50vw;
+    @include tablet {
+      width: 60%;
     }
+  }
 
-    &__synopsis {
-        padding: 0 6rem;
+  &__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__poster-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    @include tablet {
     }
+  }
+
+  &__poster {
+    width: 60vw;
+    height: 80vw;
+    @include tablet {
+      width: 40vw;
+      height: 60vw;
+    }
+  }
+
+  &__synopsis {
+    width: 80%;
+    @include tablet {
+      width: 75%;
+      padding: 1rem 0;
+    }
+  }
 }
